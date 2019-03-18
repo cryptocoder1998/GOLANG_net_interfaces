@@ -2,8 +2,8 @@ FROM golang:alpine
 
 WORKDIR /go/src
 
-COPY client.go ./api_client/
-COPY server.go ./api_server/
+COPY ./Client/client.go ./api_client/
+COPY ./Server/server.go ./api_server/
 
 RUN apk update 
 RUN apk add git
