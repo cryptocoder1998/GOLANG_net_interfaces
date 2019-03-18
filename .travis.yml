@@ -1,0 +1,9 @@
+lang: go
+go: 
+- 1.10.4
+before_install:
+- go get github.com/gorilla/mux
+script:
+- go test -v ./...
+after_success:
+- 
