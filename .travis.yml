@@ -9,4 +9,4 @@ script:
 - go test -v ./Client/...
 
 after_success:
-- docker build --tag net_int_api
+- docker build --tag net_int_api .
