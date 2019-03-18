@@ -3,7 +3,7 @@ lang: go
 go: 1.10.4
 
 before_install:
-- go get github.com/gorilla/mux
+- go get -d -v github.com/gorilla/mux
 
 script:
 - go test -v ./Client/...
