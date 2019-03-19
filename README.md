@@ -26,8 +26,14 @@ Our server is automatically started with containter build, so now you just need 
 ```bash
 docker exec -it [container-id] ./client
 ```
-Client app will print a help message if you will mistake in any of arguments.
+Client app will print a help message if you will mistake in any of arguments. By default, server is 127.0.0.1 and port is 8080.
 
+# Example
+
+```bash
+docker exec -it c2f807b3d96a ./client --version --server 127.0.0.1 --port 8080
+docker exec -it c2f807b3d96a ./client list --server 127.0.0.1 --port 8080
+```
 # Help
 ```bash
 AVAILABLE OPTIONS:
